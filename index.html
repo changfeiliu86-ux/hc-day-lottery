@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HC Day Lottery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="admin.html" class="admin-link" id="adminLink">📊 后台管理</a>
+            <h1 id="title">🎉 HC Day 幸运抽奖 🎉</h1>
+            <button id="langToggle" class="lang-toggle">English</button>
+        </header>
+
+        <div class="lottery-section">
+            <div class="draw-area">
+                <div class="number-display" id="numberDisplay">
+                    <span class="label" id="numberLabel">🎯 你的幸运号码是</span>
+                    <span class="number" id="drawnNumber">?</span>
+                </div>
+                <div class="prize-info" id="prizeInfo">
+                    <span id="prizeName">✨ 点击按钮开始抽奖吧！</span>
+                </div>
+                <div class="button-container">
+                    <button id="drawButton" class="draw-button">
+                        <span id="drawButtonText">🎲 开始抽奖</span>
+                    </button>
+                    <button id="nextRoundButton" class="draw-button next-round-button" style="display: none;">
+                        <span id="nextRoundButtonText">✨ 开启下一轮</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
