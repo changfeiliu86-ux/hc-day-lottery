@@ -1,0 +1,9 @@
+请在终端执行以下命令：
+
+cd /Users/liuchangfei/HC-Day
+git push -u origin main
+
+当提示输入时：
+- Username: changfeiliu86-ux
+- Password: 粘贴你的 Personal Access Token（不是 GitHub 密码！）
+

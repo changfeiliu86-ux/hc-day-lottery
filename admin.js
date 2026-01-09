@@ -211,9 +211,9 @@ function exportData() {
 
 // Clear all data
 function clearAllData() {
-    if (confirm('确定要清空所有抽奖数据吗？此操作不可恢复！')) {
+    if (confirm('确定要清空所有抽奖数据吗？\n\n⚠️ 此操作将：\n- 清空所有已抽号码\n- 清空所有抽奖记录\n- 重置抽奖系统\n\n此操作不可恢复！')) {
         localStorage.removeItem('lotteryData');
-        alert('数据已清空');
+        alert('✅ 数据已清空！\n\n📝 重要提示：\n请刷新抽奖主页面（index.html）以确保数据完全重置。');
         refreshData();
     }
 }

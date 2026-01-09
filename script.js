@@ -153,6 +153,15 @@ function resetForNextRound() {
     elements.drawButton.disabled = drawnNumbers.size >= totalNumbers;
 }
 
+// Reset all data (for admin use)
+function resetAllData() {
+    drawnNumbers.clear();
+    history = [];
+    saveData();
+    resetForNextRound();
+    updateUI();
+}
+
 
 // Handle draw button click
 function handleDraw() {
